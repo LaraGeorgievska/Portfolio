@@ -1,0 +1,274 @@
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+.conteiner{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(portfolio\ background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner .box{
+    height: 86vh;
+    width: 75%;
+    padding: 0px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    display: flex;
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+}
+
+.conteiner::after{
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: #e895a4;
+    transform: translate(490px,150px);
+    border-radius: 50%;
+}
+
+.conteiner .box nav{
+    height: 7%;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding: 20px;
+}
+.conteiner .box nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.conteiner .box nav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #242329;
+    transition: 0.4s;
+}
+
+.conteiner .box nav ul li a:hover{
+    color: #cd4d9c;
+}
+
+nav .logo img{
+    width: 100px;
+    height: 100px;
+    color: #242329;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-left: 60px;
+    text-decoration: none;
+}
+
+.conteiner .box .contains{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 8%;
+    padding-left: 80px;
+}
+
+.conteiner .box .contains .section-1 {
+    position: relative;
+    width: 40%;
+}
+
+.contains .section-1 h1{
+     margin-bottom: 20px;
+     font-size: 50px;
+     font-weight: bold;
+     color: #242329;
+}
+
+.contains .section-1 h3{
+    font-size: 24px;
+    color: #cd4d9c;
+    margin-bottom: 8px;
+}
+
+.contains .section-1 p{
+    font-size: 18px;
+    color: #242329;
+    margin-bottom: 48px;
+}
+
+.contains .section-1 .btn{
+    padding: 15px 20px;
+    background-color: #e895a4;
+    border: 1px solid #cd4d9c;
+    color: aliceblue;
+    border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contains .section-1 .btn:hover{
+    background-color: aliceblue;
+    color: #cd4d9c;
+}
+
+.contains .section-2{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.contains .section-2 .img{
+    width: 100%;
+}
+
+.contains .section-3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    left: 20px;
+    top: 200px;
+}
+
+.contains .section-3 a i{
+    font-size: 21px;
+    color: #e895a4;
+    transition: 0.4s;
+
+}
+
+.contains .section-3 a i:hover{
+    color: #cd4d9c;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 220px;
+    padding-bottom: 24px;
+    width: 1000px;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 220px;
+    padding-right: 300px;
+}
+
+.sub-section-alternative h2{
+    text-align: left;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 32px;
+}
+
+.sub-section-alternative h3{
+   display: flex;
+   justify-content: center;
+   padding-top: 24px;
+}
+
+.sub-section-alternative p{
+    padding-bottom: 16px;
+}
+
+.sub-section-alternative .subtext{
+    padding-top: 16px;
+}
+
+
+.project-card {
+    width: 600px;
+    height: 400px;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: left;
+}
+
+@media only screen and (max-width: 1000px){
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+.project-image {
+    margin-top: 25px;
+    width: 280px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+hr {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #ef4bcb;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus{
+    outline: 0;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: #2b2c38;
+        margin: 0ppx;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+    }    
+}
